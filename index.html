@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="" href="style.css">
+
+    <title>agenda</title>
+
+</head>
+
+<body>
+
+    <header>
+        <section class="imagem">
+            <div class="interface">
+                <div class="conteudo">
+                    <h2>agenda pessoal</h2>
+                </div>
+
+                <div class="conte">
+                    <h1>sua agenda pessoal</h1>
+                    <p>sua agenda pessoal diretamente do seu navegador!</p>
+                    <button ondblclick="dois()" onclick="saudacao()">saudação</button>
+
+                    <h3 id="lista"></h3>
+                </div>
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#meio">
+                                <p>principal</p>
+                            </a></li>
+                        <li><button onclick="aviso()">aviso</button></li>
+                        <p class="aviso" id="recebe"></p>
+                    </ul>
+                </nav>
+
+            </div>
+        </section>
+    </header>
+
+
+    <main>
+        <section>
+            <div class="interface">
+                <div class="aba-itens">
+
+                    <h2 id="meio">salve aqui seus compromissos</h2>
+
+                    <input type="text" name="compromisso" id="compromisso" placeholder="digite seu compromisso aqui!">
+
+                    <input type="date" id="data" placeholder="data">
+
+                    <input type="time" id="horario" placeholder="o horario!">
+
+                    <button onclick="enviar()">salve aqui</button>
+
+                </div>
+
+                <div class="lista">
+
+                    <h2>sua lista: </h2>
+
+                    <hr>
+
+                    <ul id="dados"></ul>
+
+                </div>
+            </div>
+
+
+            </div>
+        </section>
+    </main>
+
+
+    <script src="/aulajava/main.js"></script>
+</body>
+
+</html>
